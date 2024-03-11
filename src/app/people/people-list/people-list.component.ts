@@ -17,6 +17,7 @@ export class PeopleListComponent implements OnInit {
   readonly actions: PoPageDynamicTableActions = {
     detail: 'people/detail/:id',
     edit: 'people/edit/:id',
+    new: '/people/new',
     remove: true,
   };
 

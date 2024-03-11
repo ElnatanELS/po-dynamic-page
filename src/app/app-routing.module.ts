@@ -10,6 +10,7 @@ const routes: Routes = [
   {path: 'people', component:PeopleListComponent},
   {path: 'people/detail/:id', component:PeopleDetailComponent},
   {path: 'people/edit/:id', component:PeopleEditComponent},
+  {path: 'people/new', component:PeopleEditComponent},
   {path: '**', pathMatch:'full', redirectTo:'/home'}
 ];
 

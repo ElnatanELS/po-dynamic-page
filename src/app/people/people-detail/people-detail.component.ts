@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PoBreadcrumb } from '@po-ui/ng-components';
+import { ForceOptionComponentEnum, PoBreadcrumb } from '@po-ui/ng-components';
 
 import { PoPageDynamicDetailActions, PoPageDynamicDetailField } from '@po-ui/ng-templates';
 
@@ -34,6 +34,9 @@ export class PeopleDetailComponent implements OnInit {
     {
       property: 'genre',
       label: 'Genero',
+      options: [{ label: 'Masculino', value: 'male' },
+      { label: 'Feminino', value: 'female' },
+      { label: 'Outros', value: 'other' }],
     },
     {
       property: 'email',

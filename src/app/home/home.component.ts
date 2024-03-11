@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { PoPageAction } from '@po-ui/ng-components';
+import { PoBreadcrumb, PoPageAction } from '@po-ui/ng-components';
 
 @Component({
   selector: 'app-home',
@@ -10,6 +10,13 @@ import { PoPageAction } from '@po-ui/ng-components';
 export class HomeComponent implements OnInit {
 
   readonly pageActions: Array<PoPageAction> = [];
+
+
+  public readonly breadcrumb: PoBreadcrumb = {
+    items: [
+      { label: 'Home'}
+    ]
+  };
 
   constructor() { }
 
