@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PoBreadcrumb } from '@po-ui/ng-components';
 
 import {
   PoPageDynamicTableActions,
@@ -22,6 +23,13 @@ export class PeopleListComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  public readonly breadcrumb: PoBreadcrumb = {
+    items: [
+      { label: 'Home', link: '/' },
+      { label: 'Pessoas' },
+    ]
+  };
 
   fields: Array<PoPageDynamicTableFilters> = [
     { property: 'id', key: true, visible: false },

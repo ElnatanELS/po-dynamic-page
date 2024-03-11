@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PoBreadcrumb } from '@po-ui/ng-components';
 
 import { PoPageDynamicDetailActions, PoPageDynamicDetailField } from '@po-ui/ng-templates';
 
@@ -15,6 +16,17 @@ export class PeopleDetailComponent implements OnInit {
     back: '/people',
     edit: 'people/edit/:id'
   };
+
+
+
+  public readonly breadcrumb: PoBreadcrumb = {
+    items: [
+      { label: 'Home', link: '/' },
+      { label: 'Pessoas', link: '/people' },
+      { label: 'Detalhe' }
+    ]
+  };
+
 
   readonly fields: Array<PoPageDynamicDetailField> = [
     { property: 'id', label: 'User ID', key: true },
