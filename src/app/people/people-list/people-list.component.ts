@@ -31,9 +31,8 @@ export class PeopleListComponent implements OnInit {
       label: 'Genero',
     },
     {
-      property: 'birthdate',
-      label: 'Data de Nascimento',
-      type: 'date',
+      property: 'email',
+      label: 'E-mail',
     },
     {
       property: 'cityName',
