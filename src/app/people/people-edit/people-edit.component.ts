@@ -14,6 +14,8 @@ export class PeopleEditComponent implements OnInit {
 
   public readonly actions: PoPageDynamicEditActions = {
     save: '/people',
+    saveNew: '/people',
+
   };
 
   readonly fields: Array<PoPageDynamicEditField> = [

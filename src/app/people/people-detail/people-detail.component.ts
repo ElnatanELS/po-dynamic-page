@@ -12,7 +12,8 @@ export class PeopleDetailComponent implements OnInit {
   readonly apiService = 'https://po-sample-api.onrender.com/v1/people';
 
   public readonly actions: PoPageDynamicDetailActions = {
-    back: '/people'
+    back: '/people',
+    edit: 'people/edit/:id'
   };
 
   readonly fields: Array<PoPageDynamicDetailField> = [
