@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PeopleDetailComponent } from './people/people-detail/people-detail.component';
 import { PeopleListComponent } from './people/people-list/people-list.component';
+import { PeopleEditComponent } from './people/people-edit/people-edit.component';
 
 
 
@@ -17,7 +18,8 @@ import { PeopleListComponent } from './people/people-list/people-list.component'
     AppComponent,
     HomeComponent,
     PeopleListComponent,
-    PeopleDetailComponent
+    PeopleDetailComponent,
+    PeopleEditComponent
   ],
   imports: [
     BrowserModule,

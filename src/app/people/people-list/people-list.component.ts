@@ -14,7 +14,8 @@ export class PeopleListComponent implements OnInit {
   readonly apiService = 'https://po-sample-api.onrender.com/v1/people';
 
   readonly actions: PoPageDynamicTableActions = {
-    detail: 'people/detail/:id'
+    detail: 'people/detail/:id',
+    edit: 'people/edit/:id'
   };
 
   constructor() {}
