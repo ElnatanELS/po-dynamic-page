@@ -14,8 +14,5 @@ export class AppComponent {
     { label: 'Pessoas',link:'/people' },
   ];
 
-  private onClick() {
-    alert('Clicked in menu item')
-  }
 
 }
